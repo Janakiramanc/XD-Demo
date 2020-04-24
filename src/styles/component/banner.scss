@@ -28,6 +28,10 @@
             width: 260px; 
             margin: auto 15px;
         }
+        @include if-max(sm) {
+            width: 100%;
+            text-align: center;
+        }
     }
     &__title{
         font-family: $segoe-bold;

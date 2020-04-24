@@ -1,89 +1,62 @@
 .footer {
-    margin: 40px 0 0;    
-    &__title {
-        font-size: 18px;
-        font-family: $segoe-bold;
-        padding-bottom: 30px;
-        .dark--theme &{
-            color: $white;
+    background: $footer-bg;
+    color: $white;
+    padding: 30px 0 20px;
+    margin-top: 60px;
+    &__title{
+        color: $white;
+        font-size: 16px;
+        font-family: $segoe-semibold;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 35px;
+        li{
+            display: block;
+            font-size: 16px;
+            font-family: $segoe-light;
+            line-height: 32px;
         }
     }
-    &__content {
-        color: $primary-2;
-        margin-bottom: 22px;
-        .dark--theme &{
-            color: $white;
+    .newsletter__content{
+        margin-bottom: 50px;
+    }
+    .fab{
+        font-size: 32px;
+        margin-right: 15px;
+        color: $brand-icons;
+        &:hover{
+            color: $blue;
+            cursor: pointer;
         }
     }
-    .instafeed {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -5px 20px;
-        &__img {
-            width: 56px;
-            height: 58px;
-            overflow: hidden;
-            margin: 5px 4px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+}
+.copyright{
+    background: $black-1;
+    color: $copyright;
+    p{
+        margin: 0;
+        padding: 16px 0;        
+        @include if-max(xs){
+            text-align: center;
+            padding: 7px 0 3px;
         }
     }
-    .copyright{
-        color: $primary-2;
-        text-align: center;
-        margin-top: 45px;
-        .dark--theme &{
-            color: $white;
+    .text-right{
+        @include if-max(xs){
+            text-align: center !important;
         }
     }
-    &__news {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 35px;
-        .form-group{
-            margin: 0;
-            label{
-                opacity: 0;
-                display: block;
-                margin: 0;
-                height: 0;
-            }
-        }
-        .email-box {
-            color: $primary-2;
-            width: 100%;
-            height: 40px;
-            border: none;
-            background: $grey-shade;
-            padding: 0 20px;
-            &:focus{
-                box-shadow: 0 0 4px inset $primary-2;
-                outline: none;
-                transition: all 0.5s linear;
-            }
-        }
-        .btn{
-            background: $blue;
-            color: $white;
-            border-radius: 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            border: none;
-            padding: 0 13px;
-        }
-    }
-    .social-icon{
-        span{
-            color: $primary-2;
-            margin: 0 25px 25px 0;
-            float: left;
-            .dark--theme &{
-                color: $white;
-            }
+    a{
+        color: $blue;
+        font-family: $segoe-semibold;
+        &:hover{
+            color: $blue;
+            cursor: pointer;
+            text-decoration: underline;
         }
     }
 }

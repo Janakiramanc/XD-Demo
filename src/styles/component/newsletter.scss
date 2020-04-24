@@ -2,7 +2,8 @@
     background: $white;
     &__wrapper{
         border: 1px solid $border-light;
-        border-radius: 10px;  
+        border-radius: 10px; 
+        overflow: hidden; 
     }      
     &__title{
         color: $grey-rare;
@@ -40,18 +41,33 @@
                 line-height: 19px;
             }
         }
+        @include if-max(sm) {
+            padding: 15px 30px;
+        }
     }
     &__textbox{
-        background: $white;
+        background: #2C3033;
         border: none;
-        color: $primary-2;        
-        height: 50px;
+        color: $white;        
+        height: 46px;
         padding: 12px 15% 15px 25px;
         width: 90%;
         &:focus{
-            box-shadow: 0 0 4px inset $primary-2;
+            box-shadow: 0 0 4px inset $grey-medium;
             outline: none;
             transition: all 0.5s linear;
+        }
+        &::placeholder { 
+            color: $white;
+            opacity: 1; /* Firefox */
+          }
+          
+        &:-ms-input-placeholder { 
+            color: $white;
+        }
+        
+        &::-ms-input-placeholder {
+            color: $white;
         }
     }
     &__content{
@@ -68,7 +84,8 @@
         .btn--blue{
             position: absolute;
             right: 0;
-            top: 5px;
+            top: 0;
+            padding: 10px 31px 12px;
         }
     }
     .light--theme & {

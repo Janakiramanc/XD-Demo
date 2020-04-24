@@ -8,7 +8,7 @@ const Newsletter = props => {
       <h1 className="newsletter__title">News & Press Release</h1>
       <section className="newsletter__wrapper">
         <div className="row align-items-center">
-          <div className="col col-lg-auto col-md-6">
+          <div className="col col-12 col-lg-auto col-md-6 text-center">
             <img src={require("../../images/newsletter.png")} className="img-fluid" alt="newletter" />
           </div>
           <div className="col newsletter__info">

@@ -25,7 +25,7 @@ class ProductCard extends React.Component {
       : `far fa-heart`;
     return (
       <div
-        className="col-4 col-md-6 col-xl-4 col"
+        className="col col-12 col-md-6 col-xl-4"
         id={this.props.details.productId}
       >
         <section className="product">

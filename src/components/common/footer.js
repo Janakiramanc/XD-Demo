@@ -6,91 +6,75 @@ function Footer() {
       <footer className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7 col-md-12 ">
-              <div className="row">
-                <div className="col-lg-5 col-md-6 col-12">
-                  <div className="footer__title">About Us</div>
-                  <div className="footer__content">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s
-                  </div>
-                </div>
-                <div className="col-lg-7 col-md-6 col-12">
-                  <div className="footer__title">Newsletter</div>
-                  <div className="footer__content">
-                    Stay updated with our latest trends
-                  </div>
-                  <div className="footer__news">
-                    <div className="form-group">
-                      <label for="footer-email">email:</label>
-                      <input
-                        type="text"
-                        placeholder="Email Address"
-                        id="footer-email"
-                        className="email-box"
-                      />
-                    </div>
-                    <button
-                      className="btn"
-                      type="button"
-                      aria-label="Right Align"
-                    >
-                      <span className="far fa-long-arrow-right"></span>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div className="col-6 col-md-4">
+              <h6 className="footer__title">Company</h6>
+              <ul className="footer__list">
+                <li>About Us</li>
+                <li>Corporate Social Responsibility</li>
+                <li>Social Media Sites</li>
+                <li>Quality, Environment, Health & Safety</li>
+                <li>E- Waste</li>
+                <li>Diversity</li> 
+                <li>Press Room</li> 
+                <li>Terms of Use</li> 
+                <li>Privacy Policy</li> 
+                <li>FAQ</li>
+              </ul>
             </div>
-            <div className="col-lg-5 col-md-12">
-              <div className="row">
-                <div className="col-lg-7 col-md-6 col-12">
-                  <div className="footer__title">Instagram Feed</div>
-                  <div className="instafeed">
-                    <div className="instafeed__img">
-                      <img src={require("../../images/1.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/2.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/3.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/4.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/5.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/6.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/7.png")} alt="instaimg" />
-                    </div>
-                    <div className="instafeed__img">
-                      <img src={require("../../images/8.png")} alt="instaimg" />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-5 col-md-6 col-12">
-                  <div className="footer__title">Follow Us</div>
-                  <div className="footer__content">Let us be social</div>
-                  <div className="social-icon">
-                    <span className="fab fa-facebook-f"></span>
-                    <span className="fab fa-twitter"></span>
-                    <span className="fab fa-dribbble"></span>
-                    <span className="fab fa-behance"></span>
-                  </div>
-                </div>
-              </div>
+            <div className="col-6 col-md-3">
+              <h6 className="footer__title">Products</h6>
+              <ul className="footer__list">
+                <li>Cinematography</li>
+                <li>Photography</li>
+                <li>Printing</li>
+                <li>Scanning</li>
+              </ul>
+              <h6 className="footer__title">Services</h6>
+              <ul className="footer__list">
+                <li>Where to Buy</li>
+                <li>Service Network</li>
+                <li>Product Warranty</li>
+                <li>Extended Warranty</li>
+              </ul>
             </div>
-          </div>
-          <div className="row">
-            <div className="col copyright">Copyright ©2020</div>
-          </div>
+            <div className="col-12 col-md-5">
+              <h6 className="footer__title">Newsletter</h6> 
+              <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+              <div className="newsletter__content">
+                <div className="form-group">
+                  <label for="newsletter-email">email:</label>
+                  <input type="text" className="newsletter__textbox rounded-pill" placeholder="Email address" id="newsletter-email" />
+                </div>
+                <button type="button" className="btn btn--blue btn__medium rounded-pill" aria-label="Right Align">Subscribe</button>
+              </div>
+              <h6 className="footer__title">Experience Whitelabel App on Mobile</h6> 
+              <a className="mr-4">
+                <img src={require("../../images/playstore.png")} alt="playstore" />
+              </a>
+              <a>
+                <img src={require("../../images/appstore.png")} alt="appstore" />
+              </a>
+              <h6 className="footer__title mt-5">Keep In Touch</h6> 
+              <a className="fab fa-facebook-square"></a>
+              <a className="fab fa-twitter"></a>
+              <a className="fab fa-instagram"></a>
+              <a className="fab fa-youtube"></a>
+            </div>
+          </div>          
         </div>
       </footer>
+      <section className="copyright">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-sm-5">
+              <p>In case of any concern, <a>Contact Us</a></p>
+            </div>
+            <div className="col-12 col-sm-7 text-right">
+              <p>© 2020 www.WhiteLabel.com. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
