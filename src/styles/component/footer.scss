@@ -1,8 +1,5 @@
 .footer {
-    padding: 125px 0;
-    @include if-max-break(md) {
-        padding: 66px 0;
-    }
+    margin: 40px 0 0;    
     &__title {
         font-size: 18px;
         font-family: $segoe-bold;

@@ -1,20 +1,13 @@
 .banner{
     background: url(../../images/banner.png) no-repeat center center;
-    background-attachment: fixed;
     background-size: cover;
     color: $white;
     display: flex;
-    height: calc(100vh - 122px);
-    margin-bottom: 120px;
+    height: 500px;
+    margin-bottom: 20px;
     min-height: 375px;
-    position: relative;
-    @include if-max-break(md) {
-        margin-bottom: 54px;
-    }
-    @include if-max-break(sm) {
-        height: calc(100vh - 82px);
-        min-height: auto;
-    }
+    position: relative;    
+    
     &__overlay{
         background: rgba(0,0,0,.5);
         height: 100%;
@@ -23,27 +16,46 @@
         z-index: 1;
     }
     &__content{
-        margin: auto;  
+        margin: auto 60px;  
         position: relative;
-        width: 60%;
+        width: 400px;
         z-index: 2;
-        @media (max-width: 1199px){
-            width: 95%;
+        @include if-max-break(xl){
+            width: 340px; 
+            margin: auto 30px;
+        }
+        @include if-max-break(md){
+            width: 260px; 
+            margin: auto 15px;
         }
     }
     &__title{
         font-family: $segoe-bold;
-        font-size: 62px;
+        font-size: 40px;
         margin-bottom: 24px;
-        @include if-max-break(md) {
-            font-size: 25px;
-        }
+        text-transform: uppercase;   
+        @include if-max-break(xl){
+            font-size: 35px;
+        }     
+        @include if-max-break(md){
+            font-size: 28px;
+        }     
     }    
     &__description{
-        margin-bottom: 63px;
-        span{
-            margin: 0 13px;
-        }
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 30px;
+        @include if-max-break(md){
+            font-size: 15px;
+            line-height: 25px;
+        } 
+        
+    }
+    .btn--white{
+        background: rgba(255,255,255,.23);
+        color: $light-white;
+        font-size: 27px;
+        text-transform: uppercase;
     }
     &--small{
         height: 225px;

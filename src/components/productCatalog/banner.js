@@ -2,23 +2,20 @@ import React from "react";
 
 function Banner() {
   return (
-    <section className="banner text-center">
-      <div className="banner__overlay"></div>
+    <section className="banner">
       <div className="banner__content">
         <h1 className="banner__title">
-          Fashion for <br /> Upcoming Winter
+        COOLPIX LENS FOR<br/> EVERY OCCASION
         </h1>
         <p className="banner__description">
-          Wear It is a fashion apparael brand. It caters to all demographics.
-          From a new born baby, kids, youngsters and all have something to take
-          away.
+          Combining outstanding optics with sophisticated design and features, WhiteLabel compact digital camera lens capture your everyday precious moments.
         </p>
         <button
           type="button"
-          className="btn btn__big btn--bold  btn--white"
+          className="btn btn--bold  btn--white rounded-pill btn__wide"
           aria-label="Center Align"
         >
-          View Collection
+          View All
         </button>
       </div>
     </section>

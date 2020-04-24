@@ -21,9 +21,11 @@ a, a:hover, a:focus{
 }
 @media (min-width: 1260px) {
     .container {
-        max-width:1240px
+        max-width:1200px
     }
 }
 @include if-max-break(md) {
-    .container{ max-width: 100%;}
+    .container{ 
+        max-width: 100%;
+    }
 }

@@ -1,26 +1,13 @@
 .newsletter{
-    background: $grey-shade;
-    padding: 100px 20px;  
-    margin-top: 140px;  
-    @include if-max-break(md) {
-        padding: 90px 20px;  
-        margin-top: 70px;
-    }
-    @include if-max-break(sm) {
-        margin-top: 30px;
-    }
-    &__container{
-        margin: auto;
-        padding: 0 15px;
-        width: 630px;
-        @include if-max-break(md){
-            padding: 0;
-            width: 100%;
-        }
-    }
+    background: $white;
+    &__wrapper{
+        border: 1px solid $border-light;
+        border-radius: 10px;  
+    }      
     &__title{
-        font-family: $segoe-bold;
-        font-size: 30px;
+        color: $grey-rare;
+        font-family: $segoe-light;
+        font-size: 40px;
         margin-bottom: 10px;
         .dark--theme &{
             color: $white;
@@ -30,10 +17,28 @@
         }
     }
     &__info{
-        color: $primary-2;
-        margin-bottom: 50px;
+        color: $grey-black;
         .dark--theme &{
             color: $white;
+        }
+        &--title{
+            font-size: 24px;
+            font-family: $segoe-light;
+            line-height: 28px;
+            margin-bottom: 20px;
+            @include if-max-break(lg) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+        &--content{
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 20px;
+            @include if-max-break(lg) {
+                font-size: 14px;
+                line-height: 19px;
+            }
         }
     }
     &__textbox{

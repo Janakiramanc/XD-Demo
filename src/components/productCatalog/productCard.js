@@ -25,11 +25,12 @@ class ProductCard extends React.Component {
       : `far fa-heart`;
     return (
       <div
-        className="product w-20 col text-center"
+        className="col-4 col-md-6 col-xl-4 col"
         id={this.props.details.productId}
       >
-        <div className="product__image">
-          <div className="product__hover">
+        <section className="product">
+          <div className="product__image">
+            <label className="product__new rounded-pill">New</label>
             <a
               href="#/"
               className={heartCls}
@@ -39,24 +40,34 @@ class ProductCard extends React.Component {
             >
               <span className="d-none d-print-block">Favourites</span>
             </a>
-            <Link
-              className="far fa-eye"
-              to={`/Product/${this.props.details.productId}`}
-            ></Link>
+            {/* <div className="product__hover">
+              
+              <Link
+                className="far fa-eye"
+                to={`/Product/${this.props.details.productId}`}
+              ></Link>
+            </div> */}
+            <img
+              className="img-fluid"
+              src={require(`../../images/${this.props.details.image}.png`)}
+              alt="product"
+            />
           </div>
-          <img
-            className="img-fluid"
-            src={require(`../../images/${this.props.details.image}.png`)}
-            alt="product"
-          />
-        </div>
-        <h5
-          className="product__title text-truncate"
-          title={this.props.details.productName}
-        >
-          {this.props.details.productName}
-        </h5>
-        <h5 className="product__price">{this.props.details.price}</h5>
+          <h5
+            className="product__title"
+            title={this.props.details.productName}
+          >
+            {this.props.details.productName}
+          </h5>
+          <div className="align-items-baseline row">
+            <div className="col-6">
+              <h5 className="product__price">{this.props.details.price}</h5>
+            </div>
+            <div className="col-6 text-right">
+              <a className="product__cart">Add to Cart</a>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
