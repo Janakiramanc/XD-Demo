@@ -1,0 +1,13 @@
+.addproduct {
+    background: #fff;
+    padding: 50px 0;
+    &__box {
+        width: 60%;
+        margin: 0 auto;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        padding: 20px;
+        @include if-max-break(md) {
+             width: 100%;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.product-details-image{
+    height: 557px;
+    width: 100%;
+    @include if-max-break(sm) {
+        height: 355px;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    &--thumbnail{
+        position: absolute;
+        bottom: 30px;
+        right: 45px;
+        width: 165px;
+        .item {
+            border: 1px solid $light-bg;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            position: relative;
+            float: right;
+            margin-left: 5px;
+            &.current{
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background: rgba(184,80,77,0.8);
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }        
+    }
+}
+.product-details {
+    padding: 60px 0 60px 84px;
+    color: $primary-2;
+    @include if-max(md) {
+        padding: 35px 0;
+    }
+    &__head {
+        font-size: 26px;
+        color: $primary-1;
+        font-family: $segoe-bold;
+        .dark--theme &{
+            color: $white;
+        }
+    }
+    &__price {
+        color: $blue;
+        font-size: 26px;
+        font-family: $segoe-bold;
+    }
+    &__list {
+        margin: 0;
+        padding: 14px 0 22px;
+        list-style: none;
+        .dark--theme &{
+            color: $white;
+        }
+        li:first-child{
+            padding-bottom: 8px;
+            span:last-child{
+                color: $blue;
+            }
+        }
+        li span:first-child {
+            width: 100px;
+            display: inline-block;            
+            font-family: $segoe-semibold;
+        }
+    }
+    &__text {
+        margin: 0;
+        border-top: 1px dotted $primary-2;
+        padding: 22px 0 26px;
+        .dark--theme &{
+            color: $white;
+        }
+    }
+    &__quantity {
+        padding: 46px 0 30px;
+        .dark--theme &{
+            color: $white;
+        }
+        .select-box {
+            margin-left: 10px;
+            position: relative;
+            input {
+                border: 1px solid $grey-dark;
+                background: $white;
+                width: 60px;
+                padding: 0 5px;
+                height: 30px;
+            }
+        }
+        @include if-max(md) {
+            padding: 0 0 30px;
+        }
+    }
+    &__cart{
+        .far{
+            background: $grey-shade;
+            border-radius: 4px;
+            padding: 13px;
+            margin-left: 13px;
+            .dark--theme &{
+                background: $white;
+            }
+        }
+    }
+}
+  

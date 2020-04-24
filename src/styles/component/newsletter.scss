@@ -1,0 +1,79 @@
+.newsletter{
+    background: $grey-shade;
+    padding: 100px 20px;  
+    margin-top: 140px;  
+    @include if-max-break(md) {
+        padding: 90px 20px;  
+        margin-top: 70px;
+    }
+    @include if-max-break(sm) {
+        margin-top: 30px;
+    }
+    &__container{
+        margin: auto;
+        padding: 0 15px;
+        width: 630px;
+        @include if-max-break(md){
+            padding: 0;
+            width: 100%;
+        }
+    }
+    &__title{
+        font-family: $segoe-bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+        .dark--theme &{
+            color: $white;
+        }
+        @include if-max-break(md) {
+            font-size: 20px;
+        }
+    }
+    &__info{
+        color: $primary-2;
+        margin-bottom: 50px;
+        .dark--theme &{
+            color: $white;
+        }
+    }
+    &__textbox{
+        background: $white;
+        border: none;
+        color: $primary-2;        
+        height: 50px;
+        padding: 12px 15% 15px 25px;
+        width: 90%;
+        &:focus{
+            box-shadow: 0 0 4px inset $primary-2;
+            outline: none;
+            transition: all 0.5s linear;
+        }
+    }
+    &__content{
+        position: relative;
+        .form-group{
+            margin: 0;
+            label{
+                opacity: 0;
+                display: block;
+                margin: 0;
+                height: 0;
+            }
+        }
+        .btn--blue{
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+    }
+    .light--theme & {
+        background: $purple-light;
+    }
+    .dark--theme & {
+        background: $dark-blue;
+        .btn--blue{
+            background: $dark-bg;
+            color: $white;
+        }
+    }
+}

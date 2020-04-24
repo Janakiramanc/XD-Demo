@@ -1,0 +1,105 @@
+{   
+    "url" : "https://api.myjson.com/bins/dap2o",
+      "products": [
+        {
+          "productId": 1,
+          "productName": "Long Sleeve Shirt",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Covers full sleeve",
+          "image": "shirt.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 2,
+          "productName": "Woolen Jacket",
+          "category": "Jackets",
+          "price": "150$",
+          "isAvailable": true,
+          "description": "Keeps you warm",
+          "image": "jacket.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 3,
+          "productName": "Ruffled Skirt",
+          "category": "Bottoms",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Stylish skirt",
+          "image": "skirt.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 4,
+          "productName": "Tank TOp",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Summer wear",
+          "image": "tank-top.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 5,
+          "productName": "Full Sleeve T-Shirt",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Covers full sleeve",
+          "image": "t-shirt.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 6,
+          "productName": "Shirt",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Covers full sleeve",
+          "image": "shirt.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 7,
+          "productName": "Jacket",
+          "category": "Jackets",
+          "price": "150$",
+          "isAvailable": true,
+          "description": "Keeps you warm",
+          "image": "jacket.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 8,
+          "productName": "Skirt",
+          "category": "Bottoms",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Stylish skirt",
+          "image": "skirt.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 9,
+          "productName": "Summer Top",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Summer wear",
+          "image": "tank-top.png",
+          "isFavourite": false
+        },
+        {
+          "productId": 10,
+          "productName": "Casual T-Shirt",
+          "category": "Tops",
+          "price": "45$",
+          "isAvailable": true,
+          "description": "Covers full sleeve",
+          "image": "t-shirt.png",
+          "isFavourite": false
+        }
+      ]
+  }

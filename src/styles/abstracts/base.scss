@@ -1,0 +1,29 @@
+@import "fontface";
+@import "vars";
+@import "breakpoints";
+@import "mixins";
+
+body{
+    font-family: Segoe UI;
+    font-size: 14px;    
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+.default--theme{
+    background: $white;
+}
+.light--theme{
+    background: $light-bg;
+}
+.dark--theme{
+    background: $dark-bg;
+}
+@media (min-width: 1260px) {
+    .container {
+        max-width:1240px
+    }
+}
+@include if-max-break(md) {
+    .container{ max-width: 100%;}
+}
